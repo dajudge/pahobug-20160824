@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.14'
+}
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
